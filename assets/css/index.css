@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-  }
+}
 
 :root {
     --color-principal: #35573d;
@@ -9,9 +9,37 @@
     --color-second: #35573d;
     --color-text: #35573d;
     --color-subTittle: #35573d;
+    --color-back: #132a47;
 
+    --deep-seaweed: #0B1714;
+    --darker-seaweed: #172526;
 
-    --color-back: #132a47
+    --oatmeal: #D0BEAD;
+
+    --primary--darkest: var(--deep-seaweed);
+    --primary--darker: var(--darker-seaweed);
+
+    --secondary: var(--oatmeal);
+
+    --mono: "IBM Plex Mono", monospace;
+    --sans: "IBM Plex Sans", sans-serif;
+
+    --container--block-padding: 64px;
+    --container--inline-padding: min(360px, 4dvw);
+
+    --grid-column-count: 4;
+
+    --grid-gap: 12px;
+    --grid-gap-count: calc(var(--grid-column-count) - 1);
+    --total-gap-width: calc(var(--grid-gap-count) * var(--grid-gap));
+
+    --grid-item--min-width--constraint: 300px;
+    --grid-item--max-width--constraint: 480px;
+    --grid-item--min-width: min(100%, var(--grid-item--min-width--constraint));
+    --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
+
+    --grid-item--bg: var(--primary--darker);
+    --grid-item--color: var(--secondary);
 }
 
 body {
@@ -21,7 +49,8 @@ body {
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #ffffff;
+    background: radial-gradient(ellipse at bottom, #0a235b 0%, #000000 100%);
+    
 }
 
 /*----------------------- scroll -----------------------------*/
@@ -50,7 +79,7 @@ body {
 /*----------------------- nav -----------------------------*/
 
 .barraSuperiorConFondo {
-    background: linear-gradient(180deg, #0a235b , transparent 100%);
+    background: linear-gradient(180deg, #0a235b, transparent 100%);
     backdrop-filter: blur(2px);
     display: flex;
     flex-wrap: wrap;
@@ -120,17 +149,11 @@ body {
 /*----------------------- separation 1 -----------------------------*/
 
 #separation {
-    background: radial-gradient(ellipse at bottom, #0a235b  0%, #000000 100%);
-    border-top: solid 1px #ffffff;
-    position: relative;  
+    position: relative;
     color: #ffffff;
     padding-top: 8em;
     height: auto;
-    border-top-left-radius: 80px;
-    border-top-right-radius: 80px;  
     width: 100%;
     margin-top: -80px;
     z-index: 999 !important;
 }
-
-

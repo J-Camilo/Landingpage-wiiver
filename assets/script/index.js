@@ -7,19 +7,28 @@ document.addEventListener('DOMContentLoaded', function () {
     const imgDer = document.querySelector('.img-der');
     const brandName = document.querySelector('.brand-name');
     const contentLogo = document.querySelector('.content-logo');
-    
-    // Oculta inicialmente el nombre de la marca
+
     brandName.style.display = 'none';
 
-    // Muestra los elementos después de un pequeño retraso
     setTimeout(function() {
-        // Mostrar el nombre de la marca y los elementos visibles
         brandName.style.display = 'flex';
         contentLogo.classList.add('show-elements');
 
-        // Espera 1 segundo para comenzar a separar los elementos
         setTimeout(function() {
             contentLogo.classList.add('separate-elements');
         }, 1000);
-    }, 500); // Espera 0.5 segundos antes de mostrar los elementos
+    }, 500);
 });
+
+
+document.querySelector(".day-night input").addEventListener("change", () => {
+    document.querySelector("body").classList.add("toggle");
+    setTimeout(() => {
+      document.querySelector("body").classList.toggle("light");
+  
+      setTimeout(
+        () => document.querySelector("body").classList.remove("toggle"),
+        10
+      );
+    }, 5);
+  });

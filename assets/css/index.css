@@ -49,8 +49,12 @@ body {
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: radial-gradient(ellipse at bottom, #0a235b 0%, #000000 100%);
+    background: radial-gradient(ellipse at bottom, #11398f 0%, #000000 100%);
     
+}
+
+section {
+    margin: 0 0 20px 20px;
 }
 
 /*----------------------- scroll -----------------------------*/
@@ -151,9 +155,7 @@ body {
 #separation {
     position: relative;
     color: #ffffff;
-    padding-top: 8em;
     height: auto;
     width: 100%;
-    margin-top: -80px;
     z-index: 999 !important;
 }

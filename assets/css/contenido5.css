@@ -1,0 +1,103 @@
+h2 {
+    font-weight: 400;
+    margin: 2rem 0 0.25rem 0;
+}
+
+
+p {
+    margin: 0;
+}
+
+figure {
+    width: 500px;
+    aspect-ratio: 8 / 5;
+    --bg: hsl(330 80% calc(90% - (var(--hover) * 10%)));
+    --accent: hsl(280 80% 40%);
+    transition: background 0.2s;
+    background:
+        radial-gradient(circle at top left, var(--accent), transparent 75%),
+        var(--bg);
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5rem;
+}
+
+figure:after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 10%;
+    background: linear-gradient(-65deg, var(--bg) 50%, var(--accent) 50%);
+    filter: blur(25px);
+    transform:
+        translateX(calc(var(--hover) * 15%)) scale(calc(1 + (var(--hover) * 0.2)));
+    transition: transform 0.2s, background 0.2s;
+}
+
+.imgPerson {
+    position: absolute;
+    left: 20%;
+    top: 45%;
+    width: 40%;
+    transform:
+        translateX(calc(var(--hover) * -15%)) scale(calc(1 + (var(--hover) * 0.2)));
+    transition: transform 0.2s;
+}
+
+article {
+    --hover: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article:hover {
+    --hover: 1;
+}
+
+
+/* --------------------------------- cursos ---------------------- */
+
+.contentCardCursos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.cardCurso {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 210px;
+    height: 300px;
+    padding: 35px;
+
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    transition: all 300ms ease-in-out;
+
+    backdrop-filter: blur(15px);
+}
+
+.cardCurso:hover {
+    max-width: 210px;
+    transition: all 300ms ease-in-out;
+    box-shadow: 0 0 10px 1px #1ed8eb;
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+.card-footer {
+    font-size: 0.65em;
+    color: #446;
+}

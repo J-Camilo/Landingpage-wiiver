@@ -203,22 +203,82 @@
         </div>
 
     </div>
+    <div id="alert-container"></div>
 
     <div id="separation">
+        
         <div id="content">
         </div>
 
+        <div>
+            <section class="contenido1">
+                <h2>Contáctanos</h2>
+                <p>¿Tienes preguntas o necesitas más información? <br> ¡Estamos aquí para ayudarte! Completa el
+                    formulario y nos
+                    pondremos en contacto contigo lo antes posible</p>
+
+                <!-- inspired by Gururaj -->
+                <div class="background">
+                    <div class="containerContact">
+                        <div class="screen">
+                            <div class="screen-header">
+                                <div class="screen-header-left">
+                                    <div class="screen-header-button close"></div>
+                                    <div class="screen-header-button maximize"></div>
+                                    <div class="screen-header-button minimize"></div>
+                                </div>
+                                <div class="screen-header-right">
+                                    <div class="screen-header-ellipsis"></div>
+                                    <div class="screen-header-ellipsis"></div>
+                                    <div class="screen-header-ellipsis"></div>
+                                </div>
+                            </div>
+                            <div class="screen-body">
+                                <div class="screen-body-item left">
+                                    <div class="app-title">
+                                        <span>Información de contacto</span>
+                                    </div>
+                                    <div class="app-contact">Infomación: +62 81 314 928 595</div>
+
+                                </div>
+                                <div class="screen-body-item">
+                                    <div class="app-form">
+                                        <div class="app-form-group">
+                                            <input class="app-form-control" placeholder="NOMBRE" id="name">
+                                        </div>
+                                        <div class="app-form-group">
+                                            <input class="app-form-control" placeholder="CORREO" id="email">
+                                        </div>
+                                        <div class="app-form-group">
+                                            <input class="app-form-control" placeholder="NÚMERO DE CONTACTO" id="phone">
+                                        </div>
+                                        <div class="app-form-group message">
+                                            <input class="app-form-control" placeholder="MENSAJE" id="message">
+                                        </div>
+                                        <div class="app-form-group buttons">
+                                            <button class="app-form-button" id="sendButtons">Enviar</button>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
         <footer class="bg-black dark:bg-gray-900">
             <div class="container px-6 py-8 mx-auto">
                 <div class="flex flex-col items-center text-center">
                     <img class="w-auto h-14" src="/assets/img/images+/logoGray.png" alt="">
-    
+
                     <p class="max-w-md mx-auto mt-4 text-gray-500 dark:text-gray-400">
-                        Wiiber
+                        Wiiver
                         Tu Academia de No Code - Low Code
                     </p>
                 </div>
-    
+
                 <hr class="my-10 border-gray-200 dark:border-gray-700" />
                 <div class="flex flex-col items-center sm:flex-row sm:justify-between">
                     <p class="text-sm text-gray-500">© Copyright 2024. todos los derechos reservados.</p>
@@ -243,7 +303,14 @@
             </div>
         </footer>
     </div>
-    
+
     <script src="assets/script/index.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('PvfRaXWmwb1zZ-iK3');
+        })();
+    </script>
 </body>
+
 </html>

@@ -57,6 +57,22 @@ section {
     margin: 0 0 20px 20px;
 }
 
+.custom-alert {
+    position: fixed;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    left: 20px; /* Ajusta la distancia desde la izquierda */
+    padding: 10px;
+    background-color: #2f82d9;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 50px 5px #1a668b;
+    transition: opacity 0.3s ease-in-out; 
+    z-index: 1000;
+}
+
+
 /*----------------------- scroll -----------------------------*/
 
 ::-webkit-scrollbar {

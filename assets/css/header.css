@@ -223,12 +223,12 @@ body:hover .texto-frase span {
 /* Aplicando los colores y degradados según la especificación */
 
 .texto-frase span:nth-child(1) {
-    background-image: linear-gradient(45deg, #1ed8eb, #5878d9);
+    background-image: linear-gradient(45deg, #1ed8eb, #1ed8eb);
     animation-delay: 0.1s;
 }
 
 .texto-frase span:nth-child(2) {
-    background-image: linear-gradient(45deg, #5878d9, #910dba);
+    background-image: linear-gradient(45deg, #1ed8eb, #910dba);
     animation-delay: 0.2s;
 }
 
@@ -276,6 +276,9 @@ body:hover .texto-frase span {
     opacity: 0;
     width: 50px;
     transition: opacity 1s, transform 1s;
+}
+.img-center {
+    width: 300px;
 }
 
 .show-elements .img-iz,

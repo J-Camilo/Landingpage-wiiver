@@ -103,24 +103,26 @@ article:hover {
     max-width: 210px;
     height: 300px;
     padding: 35px;
-
-    border: 1px solid rgba(255, 255, 255, .25);
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.894);
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
     transition: all 300ms ease-in-out;
-
-    backdrop-filter: blur(15px);
 }
 
 .cardCurso:hover {
     max-width: 210px;
     transition: all 300ms ease-in-out;
     box-shadow: 0 0 30px 1px #1ed8eb;
-
 }
 
 .card-footer {
     font-size: 0.65em;
     color: #446;
+}
+
+
+@media screen and (max-width: 768px) {
+    figure {
+        width: 350px;
+    }
 }

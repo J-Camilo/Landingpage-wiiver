@@ -1859,3 +1859,17 @@ body:hover .texto-frase span {
         left: -600px;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    .contenido1 {
+        padding: 10px;
+    }
+    .brand-name {
+        font-weight: 800;
+        font-size: 3em;
+    }
+    .texto-frase {
+        font-size: 1.6em;
+    }
+}

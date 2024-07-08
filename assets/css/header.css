@@ -16,12 +16,35 @@
 .texto-header {
     max-width: 40ch;
     z-index: 999;
-    /* text-align: center; */
     text-shadow: 0 0 80px rgb(255, 255, 255);
-    color:rgb(194, 192, 192);
+    color: rgb(194, 192, 192);
     font-size: 1.3em;
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+.btn-header {
+    background-color: #2cabc7;
+    color: rgb(194, 192, 192);
+    font-size: 1.3em;
+    border-radius: 10px;
+    padding: 10px;
+    transform: scale(0.94);
+    cursor: pointer;
+    z-index: 999;
+    animation: scaleBtn 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    box-shadow: 0 0 50px 5px #2cabc7;
+}
+
+@keyframes scaleBtn {
+    0% {
+        transform: scale(0.84);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 @keyframes scale {
@@ -193,12 +216,16 @@ span:nth-child(25) {
 }
 
 @keyframes floats {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: none;
     }
+
     33% {
         transform: translateY(-1px) rotate(-2deg);
     }
+
     66% {
         transform: translateY(1px) rotate(2deg);
     }
@@ -209,12 +236,16 @@ body:hover .texto-frase span {
 }
 
 @keyframes bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translate(0);
     }
+
     25% {
         transform: rotateX(20deg) translateY(2px) rotate(-3deg);
     }
+
     50% {
         transform: translateY(-20px) rotate(3deg) scale(1.1);
     }
@@ -277,6 +308,7 @@ body:hover .texto-frase span {
     width: 50px;
     transition: opacity 1s, transform 1s;
 }
+
 .img-center {
     width: 300px;
 }
@@ -369,7 +401,7 @@ body:hover .texto-frase span {
     height: 90px;
     border-radius: 0 0 50% 50%;
     background: radial-gradient(ellipse at bottom, #0a235b 0%, #000000 100%);
-    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.576)  inset, -30px -20px 50px #0a235b inset;
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.576) inset, -30px -20px 50px #0a235b inset;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-animation: saturn 1s infinite linear;
@@ -1865,10 +1897,12 @@ body:hover .texto-frase span {
     .contenido1 {
         padding: 10px;
     }
+
     .brand-name {
         font-weight: 800;
         font-size: 3em;
     }
+
     .texto-frase {
         font-size: 1.6em;
     }

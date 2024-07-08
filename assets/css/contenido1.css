@@ -9,7 +9,8 @@
     transition: transform 1s ease, font-size 1s ease;
     background: linear-gradient(45deg, transparent, transparent);
     background-image: linear-gradient(105deg, #1ed8eb, #5878d9);
-    text-shadow: none;
+    text-shadow: none;    
+    font-size: 2em;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -24,8 +25,8 @@
 .contenido1:hover h2 {
     transform: translateX(0px);
     font-size: 2.5em;
-    animation: 1s all ease-in-out;
     font-weight: 600;
+    animation: 1s all ease-in-out;
 }
 
 .contenido1:hover p {

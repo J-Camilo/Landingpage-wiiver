@@ -1,6 +1,5 @@
   .background {
       display: flex;
-      min-height: 100vh;
   }
 
   .containerContact {
@@ -9,10 +8,26 @@
       padding: 10px;
   }
 
+  .btn-contenido4 {
+      background-color: #2cabc7;
+      color: rgb(194, 192, 192);
+      font-size: 1.3em;
+      display: flex;
+      margin: 40px auto;
+      width: 60%;
+      justify-content: center;
+      border-radius: 10px;
+      padding: 10px;
+      transform: scale(0.94);
+      cursor: pointer;
+      box-shadow: 0 0 50px 5px #2cabc7;
+  }
+
   .screen {
       position: relative;
       background: #3e3e3e;
-      border-radius: 15px;      box-shadow: 0 0 70px 5px #2cabc7;
+      border-radius: 15px;
+      box-shadow: 0 0 70px 5px #2cabc7;
   }
 
   .screen:after {

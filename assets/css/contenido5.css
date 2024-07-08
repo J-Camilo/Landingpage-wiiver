@@ -8,6 +8,10 @@ p {
     margin: 0;
 }
 
+.contentCursoTitle{
+     margin-bottom: 30px;
+}
+
 figure {
     width: 500px;
     aspect-ratio: 8 / 5;

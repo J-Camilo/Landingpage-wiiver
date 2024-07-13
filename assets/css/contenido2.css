@@ -30,8 +30,7 @@
     background-image: linear-gradient(105deg, #1ed8eb, #5878d9);
     text-shadow: none;
     -webkit-background-clip: text;
-    font-size: 1.1em;
-
+    font-size: 1.3em;
     background-clip: text;
     color: transparent;
 }
@@ -53,8 +52,17 @@
     margin: 20px auto;
 }
 
+.hoverContentExplorer.active {
+    background-color: #242d2f; /* O cualquier otro estilo que prefieras */
+    border-left: 4px solid white;
+    padding: 10px;
+    color: black;
+    border-radius: 15px;
+    transition: background-color .1s ease, border-left .1s ease, padding-left .1s ease;
+}
+
 .imageTable {
-    filter: drop-shadow(0 2px 50px #1bafc7)
+    filter: drop-shadow(0 2px 50px #1bafc7);
 }
 
 .btn-contenidoAll {
